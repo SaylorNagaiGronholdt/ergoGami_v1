@@ -1,3 +1,5 @@
+name: zmk-keyboard-ergoGami_v1
+
 build:
   settings:
     board_root: .
