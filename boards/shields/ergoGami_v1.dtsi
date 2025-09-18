@@ -22,8 +22,8 @@
 
     default_transform: keymap_transform0 {
         compatible = "smk,matrix-transform0";
-        columns = <6>;
-        rows = <3>;
+        columns = <11>;
+        rows = <4>;
         map = <
         //  LKey 1   |LKey 2  |LKey 3  |LKey 4  |LKey 5                     RKey 1   |RKey 2  |RKey 3  |RKey 4  |RKey 5
             RC(0,0)  RC(0,1)  RC(0,2)  RC(0,3)  RC(0,4)                     RC(0,5)  RC(0,6)  RC(0,7)  RC(0,8)  RC(0,9)
@@ -32,7 +32,11 @@
         //  LKey 11  |LKey 12 |LKey 13 |LKey 14 |LKey 15                    RKey 11  |RKey 12 |RKey 13 |RKey 14 |RKey 15
             RC(2,0)  RC(2,1)  RC(2,2)  RC(2,3)  RC(2,4)                     RC(2,5)  RC(2,6)  RC(2,7)  RC(2,8)  RC(2,9)
         //                             |LKey 16 |LKey 17 |LKey 18  (Analog) |RKey 16 |RKey 17
-                                       RC(3,3)  RC(3,4)  RC(3,5)            RC(3,5)  RC(3,6)
+                                       RC(3,2)  RC(3,3)  RC(3,4)            RC(3,5)  RC(3,6)
         >;
+    };
+
+    &default_transform { // Offset of 5 because left and right have 5 columns each
+        col-offset = <5>;
     };
 };
