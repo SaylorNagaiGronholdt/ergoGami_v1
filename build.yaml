@@ -17,7 +17,7 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
-
+---
 board: [ "ergoGami_v1" ]
 shield: [ "ergoGami_v1_left", "ergoGami_v1_right" ]
 include:
