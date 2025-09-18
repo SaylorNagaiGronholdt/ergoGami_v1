@@ -1,3 +1,9 @@
 #include "ergoGami_v1.dtsi"
 
-
+&kscan0 {
+    col-gpios
+        = <&pro_micro GPIO_ACTIVE_HIGH>
+        , <&pro_micro GPIO_ACTIVE_HIGH>
+        , <&pro_micro GPIO_ACTIVE_HIGH>
+        ;
+}
