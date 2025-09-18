@@ -3,3 +3,4 @@ name: zmk-keyboard-ergoGami_v1
 build:
   settings:
     board_root: .
+    shield: ["ergoGami_v1_left", "ergoGami_v1_right"]
